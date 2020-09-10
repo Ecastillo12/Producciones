@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.produccionesnuberries">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_berries"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_berries_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".GraficosActivity"></activity>
+        <activity android:name=".agregaRanchosActivity" />
+        <activity android:name=".registroProductoresActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".productoresActivity" />
+        <activity android:name=".estimacionesActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

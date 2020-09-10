@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Producciones NuBerries</string>
+    <string-array name="uploadImages">
+        <item>Elegir de la galeria</item>
+        <item>Tomar de la cámara</item>
+    </string-array>
+    <string-array name="itemIds">
+        <item>gallery_image</item>
+        <item>camera_image</item>
+    </string-array>
+</resources>

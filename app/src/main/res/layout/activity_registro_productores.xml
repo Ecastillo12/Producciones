@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registroProductoresActivity">
+
+    <ScrollView
+        android:layout_width="366dp"
+        android:layout_height="678dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar Productor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <EditText
+                android:id="@+id/txtNombreP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre productor"
+                android:backgroundTint="#B50C3C"/>
+            <EditText
+                android:id="@+id/txtapellidpP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido paterno productor"
+                android:backgroundTint="#B50C3C"/>
+            <EditText
+                android:id="@+id/txtapellidomP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido materno productor"
+                android:backgroundTint="#B50C3C"/>
+            <EditText
+                android:id="@+id/txtdireccionP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección productor"
+                android:backgroundTint="#B50C3C"/>
+            <EditText
+                android:id="@+id/txtTelP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono productor"
+                android:inputType="phone"
+                android:backgroundTint="#B50C3C"/>
+            <EditText
+                android:id="@+id/txtEmailP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email productor"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="#B50C3C"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clave interbancaria (Productor o sociedad)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtBanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Banco"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:backgroundTint="#B50C3C"/>
+
+                <EditText
+                    android:id="@+id/txtPlaza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Plaza"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:backgroundTint="#B50C3C"/>
+
+                <EditText
+                    android:id="@+id/txtBancoCuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Número de cuenta"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:backgroundTint="#B50C3C"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegistrarPro"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_gradient"
+                android:text="Registrar"/>
+            <Button
+                android:id="@+id/btnRestablecerFP"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_gradient"
+                android:text="Restablecer"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
